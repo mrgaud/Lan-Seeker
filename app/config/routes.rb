@@ -2,8 +2,17 @@ Rails.application.routes.draw do
   devise_for :users
 
   root "pages#home"
+  #pages
   get '/about' => 'pages#about'
   get '/donate' => 'pages#donate'
+  #messages
+  get 'messages/all' => 'message#index'
+  get 'messages/new' => "message#new"
+  get 'messages/edit' => 'message#edit'
+  get 'messages/delete' => 'message#delete'
+  get 'messages/show' => 'message#show'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
