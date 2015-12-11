@@ -16,9 +16,9 @@
   <tbody>
     <% @messages.each do |message| %>
       <tr>
-        <td><%= message.name %></td>
-        <td><%= message.email %></td>
-        <td><%= message.body %></td>
+        <td><strong><%= message.name %></strong></td>
+        <td><strong><%= message.email %></strong></td>
+        <td><strong><%= message.body %></strong></td>
          <td><%= link_to 'Show', message, class: 'btn btn-info' %></td>
         <td><%= link_to 'Edit', edit_message_path(message), class:'btn btn-primary white' %></td>
         <td><%= link_to 'Destroy', message, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
