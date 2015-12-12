@@ -1,6 +1,10 @@
-<h1>New Message</h1>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', messages_path, method: :get %>
-
+<div class='row'>
+	<div class='col-md-4 col-md-offset-4'>
+		<h1 class="text-center">New Message</h1>
+		<div class="well">
+			<%= render 'form' %>
+			<%= link_to 'Back', messages_path, method: :get %>
+		</div>
+	</div>
+</div>
