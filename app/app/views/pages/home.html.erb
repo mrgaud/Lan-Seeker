@@ -1,27 +1,31 @@
-
-<div class="jumbotron">
-	<div class="text-center" >
-		<h1>Welcome to Lan-Seeker!</h1>
-		<h4>Doing our part to bring the gaming community together.</h4>
-	</div>
-</div>
-<div class="row">
 <% if current_user %>
+	<!-- this code is JS for linking to redirected path -->
+	<script type="text/javascript">window.location.href='#'</script>
 <% else %>
-	<div class="col-md-6">
-		<div class="well">
-			<h1 class="text-center">Sign Up</h1>
-			<p class="text-center">While you're here you mite as well sign up. I mean its completely free and everything <i class='fa fa-smile-o'></i></p>
-			<%= link_to "Sign Up", new_user_registration_path, class:"btn btn-info btn-lg btn-block"%>
+	<div class="jumbotron">
+		<div class="text-center" >
+			<h1>Welcome to Lan-Seeker!</h1>
+			<h4>Doing our part to bring the gaming community together.</h4>
 		</div>
 	</div>
-	<% end %>
-	<div class="col-md-6">
-		<div class="well">
-			<h1 class="text-center">Donate!</h2>
-			<p>Donations are how i plan on keeping this site alive. I dont expect to live off donations.... yet.</p>
-			<%= link_to "Drop Cash Here", donate_path, class:"btn btn-success btn-lg btn-block" %>
+	<div class="row">
+	<% if current_user %>
+	<% else %>
+		<div class="col-md-6">
+			<div class="well">
+				<h1 class="text-center">Sign Up</h1>
+				<p class="text-center">While you're here you mite as well sign up. I mean its completely free and everything <i class='fa fa-smile-o'></i></p>
+				<%= link_to "Sign Up", new_user_registration_path, class:"btn btn-info btn-lg btn-block"%>
+			</div>
+		</div>
+		<% end %>
+		<div class="col-md-6">
+			<div class="well">
+				<h1 class="text-center">Donate!</h2>
+				<p>Donations are how i plan on keeping this site alive. I dont expect to live off donations.... yet.</p>
+				<%= link_to "Drop Cash Here", donate_path, class:"btn btn-success btn-lg btn-block" %>
 
+			</div>
 		</div>
 	</div>
-</div>
+<% end %>
