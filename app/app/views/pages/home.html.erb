@@ -1,3 +1,6 @@
+
+<%= link_to "new user profile!", new_user_profile_path(current_user) if current_user %>
+
 <% if current_user %>
 	<!-- this code is JS for linking to redirected path -->
 	<script type="text/javascript">window.location.href='#'</script>
