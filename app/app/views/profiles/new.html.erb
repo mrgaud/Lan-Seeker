@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<h1 class="text-center">Create your profile!</h1>
+		<p class="text-center">Filling out your profile will give other users a better understanding of what kind of parties you might like to attend.</p>
+		<div class="well">
+			<%= form_for @profile, url:user_profile_path do |f| %>
+
+			<div class="form-group">
+			<%= f.label :user_name %>
+			<%= f.text_field :user_name, class:'form-control', placeholder:'BananaPeeler9000' %>
+			</div>
+
+			<div class="form-group">
+			<%= f.label :first_name %>
+			<%= f.text_field :first_name, class:'form-control', placeholder:'John' %>
+			</div>
+
+			<div class="form-group">
+			<%= f.label :last_name %>
+			<%= f.text_field :last_name, class:'form-control', placeholder:'Doe' %>
+			</div>
+
+			<div class="form-group">
+			<%= f.label 'facebook Url(Optional)' %>
+			<%= f.text_field :facebook_page, class:'form-control', placeholder:'Copy & paste facebook url here' %>
+			</div>
+
+			<div class="form-group">
+			<%= f.label :description %>
+			<%= f.text_area :description, class:'form-control', placeholder:'a bunch of random junk that you feel best descripes you' %>
+			</div>
+
+			<%= f.submit "Create Profile", class:'btn btn-success btn-block' %>
+
+			<% end %>
+
+		</div>
+	</div>
+</div>

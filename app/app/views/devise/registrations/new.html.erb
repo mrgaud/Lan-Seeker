@@ -1,31 +1,30 @@
 <div class='row'>
   <div class="col-md-4">
-    <h2>Sign up</h2>
+    <h2 class="text-center">Sign up</h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
       <div class='well'>
-        <div class="field">
+        <div class="form-group">
           <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true %>
+          <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:'johnDoe@example.com' %>
         </div>
 
-        <div class="field">
+        <div class="form-group">
           <%= f.label :password %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
           <% end %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, autocomplete: "off", class:'form-control', placeholder:'password' %>
         </div>
 
-        <div class="field">
+        <div class="form-group">
           <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class:'form-control', placeholder:'password again' %>
         </div>
-
-        <div class="actions">
-          <%= f.submit "Sign up" %>
-        </div>
+        <br>
+          <%= f.submit "Sign up", class:'btn btn-success' %>
+          <br>
       <% end %>
 
       <%= render "devise/shared/links" %>
@@ -33,7 +32,7 @@
   </div>
 
   <div class='col-md-8'>
-    <h2>Great you're signing up! What does it mean?</h2>
+    <h2 class="text-center">Great you're signing up! What does it mean?</h2>
     <div class="well">
       <p class="indent bigger-font">What it means dear user is that you are now part of a community. A community where gamers can get together with others like them, and play games in a local setting. One time you may be all held up in a small apartment with cheap pizza and discount soda, the next you may be in a 12 bedroom mansion with full catering.</p>
       <p class="indent bigger-font">As for the prices of these events? I leave that solely upto the host. I will be making tools available for hosts to give all the info needed on the party at hand. It should also be said that all financial dealings are between host and atendee. 

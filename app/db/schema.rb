@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20151213234809) do
   create_table "profiles", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "user_name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "facebook_page"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
