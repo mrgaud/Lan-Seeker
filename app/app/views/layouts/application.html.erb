@@ -22,15 +22,44 @@
 
 				<%= link_to root_path, class:'navbar-brand' do %>
 					<span style=''><i class='fa fa-diamond'></i></span>
-					Lan-Seeker
+					LAN-Seeker
 				<% end %>
 				</div>
 
 
+
 				<div class="collapse navbar-collapse" id="main-nav-collapse">
 					<div class="nav navbar-nav navbar-right">
-						<% if current_user %>
+						<% if user_signed_in? %>
+							<% if current_user.profile %>
+
+								<ul class="nav navbar-nav navbar-right">
+									<li class="dropdown">
+										<!-- this is where the users name will be kept for dropdown -->
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<%= current_user.profile.user_name %> 
+										<span class="caret"></span></a>
+
+										<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li role="separator" class="divider"></li>
+										<!-- this is where the signout button will be held -->
+										<li><a href="#">
+										<%= link_to destroy_user_session_path, method: :delete do %>
+										<span class='btn btn-danger btn-block'>Sign Out</span>
+										<% end %>
+										</a></li>
+										</ul>
+									</li>
+								</ul>
+
+							<% else %>
 							<%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger navbar-btn" %>
+							<% end %>
 						<% else %>
 							<%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
 						<% end %>
@@ -57,10 +86,10 @@
 			            </li>
 
 			            <li role='seperator' class="divider"></li>
+ </ul>
 
 
-
-			          </ul>
+			         
 			        </li>
 					</ul>
 						</div>
