@@ -1,1 +1,9 @@
-<%= @user %>
+<% usr = @user.profile %>
+<h1><%= usr.user_name %></h1><br>
+<h4><%= @user.profile.first_name %> <%= @user.profile.last_name %></h4><br>
+<!-- Use code for linking to a users facebook -->
+<div id='user-facebook-link'>
+	<%= link_to "facebook", href:@user.profile.facebook_page, target:"_blank" do %>
+	<span class='btn btn-primary'>Facebook <i class='fa fa-facebook-official'></i></span>
+	<% end %>
+</div>
