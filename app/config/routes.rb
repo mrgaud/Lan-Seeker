@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :messages
   devise_for :users
+  resources :users do
+    resource :profile
+  end
 
   root "pages#home"
   #pages
