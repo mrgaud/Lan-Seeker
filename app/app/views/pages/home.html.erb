@@ -14,7 +14,9 @@
 			<div class="col-md-3">
 				<h2 class="text-center">Profile Options</h2>
 				<div class="well">
-					<%= link_to "edit profile", "#", class:'btn btn-primary btn-block' %>
+					<%= link_to edit_user_profile_path(current_user) do %>
+						<span class='btn btn-primary btn-block'>Edit profile <i class='fa fa-pencil-square'></i></span>
+					<% end %>
 					<br>
 					<%= link_to user_path(current_user) do %>
 						<span class='btn btn-info btn-block'>Profile <i class='fa fa-user'></i></span>
@@ -31,7 +33,7 @@
 	<% end %>
 
 	<!-- this code is JS for linking to redirected path -->
-	<script type="text/javascript">window.location.href='#';</script>
+	<script type="text/javascript">//window.location.href='#';</script>
 <% else %>
 
 	<div class="row">
