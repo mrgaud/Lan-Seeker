@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+	before_action :authenticate_user!
+	before_action :only_current_user
 	def new 
 		# Form for users to make their profile
 		@user=User.find(params[:user_id])
@@ -19,11 +21,27 @@ class ProfilesController < ApplicationController
 	def edit
 		@user=User.find(params[:user_id])
 		@profile=@user.profile
-
+	end
+	def update
+		@user=User.find(params[:user_id])
+		@profile=@user.profile
+			if @profile.update_attributes(profile_params)
+				flash[:success] = "Profile updated!"
+				redirect_to user_path(params[:user_id])
+			else
+				flash[:danger] = "something went wrong. try again."
+				render action: :edit
+			end
 	end
 
 
 	private
+	def only_current_user
+		@user=User.find(params[:user_id])
+
+		redirect_to(root_url) unless @user == current_user
+	end
+
 	def profile_params
 		params.require(:profile).permit(:user_name, :first_name, :last_name, :facebook_page, :description)
 	end
