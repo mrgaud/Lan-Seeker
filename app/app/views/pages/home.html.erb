@@ -8,11 +8,24 @@
 </div>
 
 
-<% if current_user %>
+<% if user_signed_in? %>
 	<% if current_user.profile %>
-		<%= link_to "edit profile", "#", class:'btn btn-primary btn-block' %>
-		<br>
-		<%= link_to "View profile", user_path(current_user), class:'btn btn-info btn-block' %>
+		<div class="row">
+			<div class="col-md-3">
+				<h2 class="text-center">Profile Options</h2>
+				<div class="well">
+					<%= link_to "edit profile", "#", class:'btn btn-primary btn-block' %>
+					<br>
+					<%= link_to user_path(current_user) do %>
+						<span class='btn btn-info btn-block'>Profile <i class='fa fa-user'></i></span>
+					<% end %>
+					<br>
+					<%= link_to "#" do %>
+						<span class='btn btn-info btn-block'>Messages <i class='fa fa-envelope'></i></span>
+					<% end %>
+				</div>
+			</div>
+		</div>
 	<% else %>
 		<%= link_to "Create a Profile", new_user_profile_path(current_user), class:'btn btn-warning btn-block' %>
 	<% end %>

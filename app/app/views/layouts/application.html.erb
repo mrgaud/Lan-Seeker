@@ -41,18 +41,18 @@
 										<span class="caret"></span></a>
 
 										<ul class="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
+										<li><a href="#">Profile Home</a></li>
+										<li><a href="#">Friends</a></li>
+										<li><a href="#">Messages</a></li>
 										<li role="separator" class="divider"></li>
-										<li><a href="#">Separated link</a></li>
+										<li><%= link_to "Edit Profile", "#" %></li>
 										<li role="separator" class="divider"></li>
 										<!-- this is where the signout button will be held -->
-										<li><a href="#">
+										<li>
 										<%= link_to destroy_user_session_path, method: :delete do %>
 										<span class='btn btn-danger btn-block'>Sign Out</span>
 										<% end %>
-										</a></li>
+										</li>
 										</ul>
 									</li>
 								</ul>
