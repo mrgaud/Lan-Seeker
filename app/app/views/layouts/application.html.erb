@@ -41,16 +41,25 @@
 										<span class="caret"></span></a>
 
 										<ul class="dropdown-menu">
-										<li><a href="#">Profile Home</a></li>
-										<li><a href="#">Friends</a></li>
-										<li><a href="#">Messages</a></li>
+										<li><%= link_to user_path(current_user) do %>
+												Profile home <i class='fa fa-home'></i>
+											<% end %>
+										</li>
+										<li><%= link_to "#" do %>
+												Friends <i class='fa fa-users'></i>
+											<% end %>
+										</li>
+										<li><%= link_to messages_path do %>
+												Messages <i class='fa fa-envelope'></i>
+											<% end %>
+										</li>
 										<li role="separator" class="divider"></li>
 										<li><%= link_to "Edit Profile", edit_user_profile_path(current_user) %></li>
 										<li role="separator" class="divider"></li>
 										<!-- this is where the signout button will be held -->
 										<li>
 										<%= link_to destroy_user_session_path, method: :delete do %>
-										<span class='btn btn-danger btn-block'>Sign Out</span>
+										<span class='btn btn-danger btn-block'>Sign Out <i class='fa fa-sign-out'></i></span>
 										<% end %>
 										</li>
 										</ul>
