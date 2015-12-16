@@ -22,7 +22,7 @@
 						<span class='btn btn-info btn-block'>Profile <i class='fa fa-user'></i></span>
 					<% end %>
 					<br>
-					<%= link_to "#" do %>
+					<%= link_to messages_path do %>
 						<span class='btn btn-info btn-block'>Messages <i class='fa fa-envelope'></i></span>
 					<% end %>
 				</div>
@@ -48,12 +48,5 @@
 				</div>
 			</div>
 		<% end %>
-		<div class="col-md-6">
-			<div class="well">
-				<h1 class="text-center">Donate!</h2>
-				<p>Donations are how i plan on keeping this site alive. I don't expect to live off donations.... yet.</p>
-				<%= link_to "Drop Cash Here", donate_path, class:"btn btn-success btn-lg btn-block" %>
-			</div>
-		</div>
 	</div>
 <% end %>
