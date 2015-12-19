@@ -1,4 +1,4 @@
-<%= form_for @profile, url:user_profile_path do |f| %>
+<%= form_for @profile, url:user_profile_path, :html => {:multiport => true} do |f| %>
 
 	<div class="form-group">
 	<%= f.label :user_name %>
@@ -18,6 +18,10 @@
 	<div class="form-group">
 	<%= f.label 'facebook Url(Optional)' %>
 	<%= f.text_field :facebook_page, class:'form-control', placeholder:'Copy & paste facebook url here' %>
+	</div>
+	<div class="form-group">
+		<%= f.label :Avatar_Photo %>
+		<%= f.file_field :avatar, class:'form-control' %>
 	</div>
 
 	<div class="form-group">

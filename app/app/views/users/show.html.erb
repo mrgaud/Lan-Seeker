@@ -1,5 +1,12 @@
 <% usr = @user.profile %>
-<h1><%= usr.user_name %></h1><br>
+<div class='row'>
+	<div class="col-md-3">
+		<div class="well text-center">
+			<%= image_tag usr.avatar, width:'250px', id:'prof-border' %>
+			<h1 class="text-center"><%= usr.user_name %></h1>
+		</div>
+	</div>
+</div>
 <h4><%= @user.profile.first_name %> <%= @user.profile.last_name %></h4><br>
 <!-- Use code for linking to a users facebook -->
 <div id='user-facebook-link'>
