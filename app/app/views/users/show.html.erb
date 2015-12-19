@@ -1,9 +1,28 @@
 <% usr = @user.profile %>
+<!-- Profile Avatar & Statistics -->
 <div class='row'>
 	<div class="col-md-3">
-		<div class="well text-center">
-			<%= image_tag usr.avatar, width:'250px', id:'prof-border' %>
-			<h1 class="text-center"><%= usr.user_name %></h1>
+		<div class="well">
+			<%= image_tag usr.avatar, width:'250px', id:'prof-border', class:'text-center' %>
+			<h1><%= usr.user_name %></h1>
+		</div>
+		<!-- Profile Statistics Here -->
+		<div class="well">
+			<h3>User Stats:</h3>
+			<ul class="list-group">
+			  <li class="list-group-item">
+			    <span class="badge">5</span>
+			    <strong>Parties Attended:</strong>
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">2</span>
+			    <strong>Parties Hosted:</strong>
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">25</span>
+			    <strong>Donation Badges Earned:</strong>
+			  </li>
+			</ul>
 		</div>
 	</div>
 </div>
