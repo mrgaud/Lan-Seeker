@@ -50,6 +50,10 @@ group :development do
 
   gem 'font-awesome-rails'
 
+  gem "imagick"
+
+
+
 
 
 

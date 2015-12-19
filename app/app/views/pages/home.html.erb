@@ -2,9 +2,10 @@
 	<div class="col-md-10 col-md-offset-1">
 		<div class="well">
 			<ul class="list-unstyled">
-				<%= links.each do |f| %>
-					<li><%= f.image %>
-				<%= f.
+				<%= link_to "http://www.google.com", target:'_blank', class:'classed-up' do %>				
+					<%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Chrome_icon_(2011).svg/2000px-Google_Chrome_icon_(2011).svg.png', width:'20px', class:'classed-up' %>
+					Google Chrome
+				<% end %>	
 			</ul>
 		</div>
 	</div>
@@ -64,3 +65,5 @@
 		<% end %>
 	</div>
 <% end %>
+
+
