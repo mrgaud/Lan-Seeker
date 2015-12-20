@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
     def home
-
+    	@messages = Message.all
     end
 
     def about 

@@ -28,7 +28,10 @@
 	<%= f.label :description %>
 	<%= f.text_area :description, class:'form-control', placeholder:'a bunch of random junk that you feel best descripes you' %>
 	</div>
-
-	<%= f.submit "Create Profile", class:'btn btn-success btn-block' %>
+	<% if current_user.profile %>
+		<%= f.submit "Update Profile", class:'btn btn-primary btn-block' %>
+	<% else %>
+		<%= f.submit "Create Profile", class:'btn btn-success btn-block' %>
+	<% end %>
 
 <% end %>
