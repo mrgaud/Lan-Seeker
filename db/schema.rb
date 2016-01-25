@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125100953) do
+ActiveRecord::Schema.define(version: 20160125103052) do
 
   create_table "messages", force: :cascade do |t|
     t.string   "name"
@@ -38,6 +38,30 @@ ActiveRecord::Schema.define(version: 20160125100953) do
     t.string   "stats_content_type"
     t.integer  "stats_file_size"
     t.datetime "stats_updated_at"
+    t.string   "GamesAttended_file_name"
+    t.string   "GamesAttended_content_type"
+    t.integer  "GamesAttended_file_size"
+    t.datetime "GamesAttended_updated_at"
+    t.string   "GamesHosted_file_name"
+    t.string   "GamesHosted_content_type"
+    t.integer  "GamesHosted_file_size"
+    t.datetime "GamesHosted_updated_at"
+    t.string   "PosReviews_file_name"
+    t.string   "PosReviews_content_type"
+    t.integer  "PosReviews_file_size"
+    t.datetime "PosReviews_updated_at"
+    t.string   "NegReviews_file_name"
+    t.string   "NegReviews_content_type"
+    t.integer  "NegReviews_file_size"
+    t.datetime "NegReviews_updated_at"
+    t.string   "badgesEarned_file_name"
+    t.string   "badgesEarned_content_type"
+    t.integer  "badgesEarned_file_size"
+    t.datetime "badgesEarned_updated_at"
+    t.string   "friends_file_name"
+    t.string   "friends_content_type"
+    t.integer  "friends_file_size"
+    t.datetime "friends_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
