@@ -56747,3 +56747,296 @@ Processing by UsersController#show as HTML
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
 Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:46:17 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered pages/home.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 776ms (Views: 753.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.self-f195be931e1f248bf7a65e7ecbf1b630ffaa1400b980729150305b2cc5a8dcf4.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/messages.self-359f497b8db4ca64ede7725a60497113d686eb86216171ff8c202e281c3b96a7.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/message.self-8a9a1ee6ff861389e53d429227b2eef5c1e8dfb005ccdd446a1b83b542195ed3.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/application.self-b6244815c3db1304e8cf81b1c4a491bc1034a82ff64047d41139cabe6ff66639.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/scaffolds.self-50efc9bbd8f7246c9ff863e2a9d4f43b8ef736260ea8e1e241d741ae3f6474e2.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/pages.self-f9b7b7fd1349b0c5e770fe872d4288e2b6e845fb110a358938d9db09c735d8d7.css?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/message.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for ::1 at 2017-02-12 12:46:18 -0600
+
+
+Started GET "/about" for ::1 at 2017-02-12 12:46:34 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-12 12:46:35 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"y8BxxgCSzcNSBTmlaThB2gxALGWI9LWGTCSYPca4aWuBBN50q+iNvAWIZpOZpXwKb5saO7ijj7ABUZBnhoy6MA=="}
+  Rendered devise/shared/_links.html.erb (7.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 198ms (Views: 181.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-12 12:46:45 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HU3DAb3T+swGm/90GSezi4XVpiLv4g4jRDrbbTZQR4FXiWyzFqm6s1EWoELpuo5b5g6QfN+1NBUJT9M3dmSU2g==", "user"=>{"email"=>"michael.G224@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "michael.g224@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-12-20 10:36:00.251460"], ["current_sign_in_at", "2017-02-12 18:46:45.888676"], ["sign_in_count", 17], ["updated_at", "2017-02-12 18:46:45.890083"], ["id", 1]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:46:45 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered pages/home.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/messages" for ::1 at 2017-02-12 12:46:50 -0600
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/messages/1" for ::1 at 2017-02-12 12:46:53 -0600
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ysyfG3siKFIDw2CaPImsFj78MNBx7DuvzNrm3OxUuUli2mPnSm8XjZGPqZFvdwzICAn8ixyvL/bUMwv0EAGg6Q==", "id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 11ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/messages" for ::1 at 2017-02-12 12:46:53 -0600
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/messages/2" for ::1 at 2017-02-12 12:46:56 -0600
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7HNf1tthaMCdODZoYCYOokVWCuB/wdsaotYhQJuuoMVEZaMq6ixXHw90/2Mz2K58c6PGuxKCz0O6P8xoZ/u5ZQ==", "id"=>"2"}
+  [1m[35mMessage Load (0.2ms)[0m  SELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/messages" for ::1 at 2017-02-12 12:46:56 -0600
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:46:58 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 145ms (Views: 143.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for ::1 at 2017-02-12 12:47:13 -0600
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new" for ::1 at 2017-02-12 12:47:14 -0600
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (9.7ms)
+  Rendered messages/new.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/messages" for ::1 at 2017-02-12 12:47:42 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J5dxQomN5u+S7AyhtEagi6q+47PgifJzlrd5KQ5RNK2PgY2+uMDZMACgxarnuABVnEsv6I3K5iqOXpQB8gQtDQ==", "message"=>{"name"=>"Status", "email"=>"this@email", "body"=>"Some text"}, "commit"=>"submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "messages" ("name", "email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Status"], ["email", "this@email"], ["body", "Some text"], ["created_at", "2017-02-12 18:47:42.201678"], ["updated_at", "2017-02-12 18:47:42.201678"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/messages/3
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/messages/3" for ::1 at 2017-02-12 12:47:42 -0600
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mMessage Load (0.2ms)[0m  SELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Completed 200 OK in 159ms (Views: 156.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:47:44 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:47:46 -0600
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:48:25 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 284ms (Views: 282.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:48:25 -0600
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:48:38 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 171ms (Views: 170.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:48:39 -0600
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 159ms (Views: 157.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:48:40 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 91ms (Views: 90.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:49:02 -0600
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.7ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 278ms (Views: 275.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:49:05 -0600
+Processing by PagesController#home as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 157ms (Views: 155.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:49:05 -0600
+Processing by PagesController#home as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
